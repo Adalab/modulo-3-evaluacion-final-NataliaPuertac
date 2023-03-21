@@ -1,0 +1,27 @@
+.main{
+    padding: 50px;
+    gap:20px;
+
+    &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    }
+
+    &__image{
+        width: 150px;
+        height: 200px;
+    }
+    
+    &__name{
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    &__species{
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+}
