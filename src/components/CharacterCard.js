@@ -11,7 +11,7 @@ return(
           
         </li>
     </Link>
-)
-}
+);
+};
 
 export default CharacterCard;

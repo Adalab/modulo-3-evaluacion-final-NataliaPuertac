@@ -5,7 +5,7 @@ const Error = ({search}) => {
     <section className="error">
         <p className="error__p">No existen personajes que coincidan con tu búsqueda</p>
     </section>
-    )
-}
+    );
+};
 
 export default Error;

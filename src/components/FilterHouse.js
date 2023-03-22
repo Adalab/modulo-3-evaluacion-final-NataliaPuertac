@@ -20,7 +20,7 @@ const FilterHouse = ({setSelect}) => {
             </select>
         </label>   
     </>
-    )
+    );
 };
 
 export default FilterHouse;

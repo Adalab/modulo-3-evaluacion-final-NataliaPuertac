@@ -21,7 +21,7 @@ const FilterName = ({setSearch, search}) =>{
         />
         </label> 
     </>
-    )
+    );
 };
 
 export default FilterName;

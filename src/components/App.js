@@ -11,9 +11,9 @@ function App() {
 
   //variables de estado
 
-  const [data, setData] = useState ([])
-  const [search, setSearch]= useState('')
-  const [select, setSelect] = useState ('Gryffindor')
+  const [data, setData] = useState ([]);
+  const [search, setSearch]= useState('');
+  const [select, setSelect] = useState ('Gryffindor');
   
   //efectos
 
@@ -70,6 +70,6 @@ function App() {
     </main>
   </div>
   );
-}
+};
 
 export default App;

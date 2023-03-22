@@ -33,7 +33,7 @@ const CharacterDetail= ({characterFind}) => {
             <Link className="character__section2--link" to={"/"}> ← volver</Link>    
         </section> 
     </div>
-    ) 
+    ); 
 };
 
 export default CharacterDetail;

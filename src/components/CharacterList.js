@@ -15,7 +15,7 @@ const CharacterList = ({characterFilter, search}) => {
         <section className="main">
           <ul className="main__list">{renderList}</ul>
         </section>
-    )
+    );
 };
 
 export default CharacterList;
