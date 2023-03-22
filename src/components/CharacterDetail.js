@@ -10,7 +10,7 @@ const CharacterDetail= ({characterFind}) => {
     <section>
         <h2>Detalles del personaje</h2>
         <img
-        src={characterFind.image}
+        src={characterFind.image !=='' ? characterFind.image : `https://via.placeholder.com/210x295/E5C07B/666666/?text=${characterFind.name}`}
         alt= {`Imagen de ${characterFind.name}`}
         title= {`Imagen de ${characterFind.name}`}
         />
