@@ -31,6 +31,8 @@ function App() {
     return eachCharacter.house.toLowerCase().includes(select.toLowerCase());
   })
   
+  //orden alfabético
+  characterFilter.sort((a, b) => a.name.localeCompare(b.name));
 
   const {pathname} = useLocation();
 
@@ -43,8 +45,8 @@ function App() {
   //devuelve el HTML
   return (
   <div className="App">
-    <header>
-      <h1>Harry Potter</h1>
+    <header className="header">
+      <h1 className="header__title">Harry Potter</h1>
     </header>
     <main>
       <Routes>

@@ -1,4 +1,4 @@
-import '../styles/characterList.scss';
+import '../styles/layouts/characterList.scss';
 import CharacterCard from './CharacterCard';
 import Error from './Error';
 
