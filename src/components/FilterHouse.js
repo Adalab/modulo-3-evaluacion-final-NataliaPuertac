@@ -1,3 +1,5 @@
+import '../styles/layouts/filterHouse.scss';
+
 const FilterHouse = ({setSelect}) => {
 
     const handleSelect = (ev) => {
@@ -8,8 +10,8 @@ const FilterHouse = ({setSelect}) => {
 
     return(
     <>
-        <label htmlFor="house">Selecciona la casa:
-            <select id="house" name="select" onChange={handleSelect}>   
+        <label className="houseLabel" htmlFor="house">Selecciona la casa:
+            <select className="houseInput" id="house" name="select" onChange={handleSelect}>   
                 <option value="Gryffindor">Gryffindor</option>
                 <option value="Hufflepuff">Hufflepuff</option>
                 <option value="Slytherin">Slytherin</option>

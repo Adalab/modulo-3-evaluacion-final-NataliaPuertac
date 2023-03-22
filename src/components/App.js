@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
+import potter from '../images/potter.jpg';
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
   return (
   <div className="App">
     <header className="header">
-      <h1 className="header__title">Harry Potter</h1>
+      <img className="header__image" alt='harry Potter' src={potter}/>
     </header>
     <main>
       <Routes>

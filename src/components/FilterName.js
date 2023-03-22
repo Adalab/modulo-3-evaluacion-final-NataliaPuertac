@@ -1,3 +1,5 @@
+import '../styles/layouts/filterName.scss';
+
 const FilterName = ({setSearch, search}) =>{
 
     const handleFilter=(ev)=>{
@@ -7,8 +9,9 @@ const FilterName = ({setSearch, search}) =>{
 
     return(
     <>
-        <label htmlFor="character"> Busca por personaje:
+        <label className="nameLabel" htmlFor="character"> Busca por personaje:
         <input
+        className="nameInput"
         type="text"
         id="character"
         name="character"

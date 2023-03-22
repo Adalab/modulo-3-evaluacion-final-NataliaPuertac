@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.link{
+    margin: 50px;
+    background-color: $characterColor;
+    border-radius: 5%;
+}
+
+.li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    &__image{
+        width: 150px;
+        height: 200px;
+        padding-top: 20px;
+    }
+    
+    &__name{
+        font-weight: bold;
+        padding-top: 10px;
+        font-family: $fontFamily;
+    }
+
+    &__species{
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        font-family: $fontFamily;
+    } 
+}
