@@ -31,8 +31,16 @@ function App() {
   .filter ((eachCharacter) => {
     return eachCharacter.house.toLowerCase().includes(select.toLowerCase());
   })
+
+  //funcion reset
+
+  const handleReset = () => {
+    setSearch ('');
+    setSelect ('Gryffindor');
+  };
   
   //orden alfabético
+
   characterFilter.sort((a, b) => a.name.localeCompare(b.name));
 
   const {pathname} = useLocation();
@@ -44,6 +52,7 @@ function App() {
   const characterFind = characterFilter.find((eachCharacter) => eachCharacter.id === characterId)
 
   //devuelve el HTML
+
   return (
   <div className="App">
     <header className="header">
@@ -52,7 +61,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<>
-          <Filters setSearch={setSearch} setSelect={setSelect} search={search}/>
+          <Filters setSearch={setSearch} setSelect={setSelect} search={search} handleReset={handleReset}/>
           <CharacterList search={search} select={select} characterFilter={characterFilter}/>
         </>}/>
         <Route path='/character/:characterId' 

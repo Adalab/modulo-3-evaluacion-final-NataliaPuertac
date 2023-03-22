@@ -5,33 +5,35 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
-    padding-bottom: 250px;
 
     &__section1{
         display:flex;
         flex-direction: row;
-        gap: 40px;
-        margin-bottom: 60px;
-
-        &--link{
-            text-decoration: none;
-            padding: 5px;
-            background-color: $characterColor;
-            border-radius: 10%;
-        }
-    }
-
-    &__section2{
-        display:flex;
-        flex-direction: row;
         gap: 20px;
         padding: 30px;
+        margin-top: 50px;
+        margin-bottom: 90px;
         background-color: $characterColor;
         border-radius: 10%;
 
         &--img{
         width: 200px;
         height: 250px;
+        }
+    }
+
+    &__section2{
+        display:flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 100px;
+        margin-top: 60px;
+
+        &--link{
+            text-decoration: none;
+            padding: 5px;
+            background-color: $characterColor;
+            border-radius: 10%;
         }
     }
 }

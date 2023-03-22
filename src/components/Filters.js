@@ -2,7 +2,7 @@ import FilterName from './FilterName';
 import FilterHouse from './FilterHouse';
 import '../styles/layouts/filters.scss';
 
-const  Filters = ({setSearch, setSelect, search}) => {
+const  Filters = ({setSearch, setSelect, search, handleReset}) => {
     const handleSubmit = (ev) => {
         ev.preventDefault();
     };
@@ -12,6 +12,12 @@ const  Filters = ({setSearch, setSelect, search}) => {
                 <FilterName setSearch={setSearch} search={search}></FilterName>
                 <FilterHouse setSelect={setSelect}></FilterHouse>
             </form>
+            <input
+            className='section__btn'
+            type="button"
+            value="Reset"
+            onclick={handleReset}
+            />
         </section>
     );
 };

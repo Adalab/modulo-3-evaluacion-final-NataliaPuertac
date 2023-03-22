@@ -8,12 +8,9 @@ const CharacterDetail= ({characterFind}) => {
     return(
     <div className="character">
         <section className="character__section1">
-            <Link className="character__section1--link" to={"/"}> ← volver</Link>    
-        </section> 
-        <section className="character__section2">
             <img
-            className="character__section2--img"
-            src={characterFind.image !=='' ? characterFind.image : `https://via.placeholder.com/210x295/E5C07B/666666/?text=${characterFind.name}`}
+            className="character__section1--img"
+            src={characterFind.image !=='' ? characterFind.image : 'https://i.pinimg.com/originals/58/5a/03/585a039dd24fb37cdfda73806a30b5fb.png'}
             alt= {`Imagen de ${characterFind.name}`}
             title= {`Imagen de ${characterFind.name}`}
             />
@@ -32,6 +29,9 @@ const CharacterDetail= ({characterFind}) => {
                 <p className='text'>{characterFind.alternate_names}</p>
             </div>
         </section>
+        <section className="character__section2">
+            <Link className="character__section2--link" to={"/"}> ← volver</Link>    
+        </section> 
     </div>
     ) 
 };
