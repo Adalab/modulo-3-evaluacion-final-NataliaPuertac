@@ -39,7 +39,7 @@ Los detalles de calidad de mi página son:
 - Si estando en el campo de filtrado la usuaria pulsa intro, se impide que el navegador navegue o
 cambie la ruta sin querer.
 - Si se busca por un texto por ejemplo "XXX" y no hay ningún personaje que coincida con dicho texto,
-se muestra el mensaje "No existen personajes que coincidan con tu búsqueda".
+se muestra el mensaje "There are no characters that match your search".
 - El filtro busca independientemente de que la usuaria introduzca el texto en mayúsculas o
 minúsculas.
 - Al entrar en el detalle de un personaje y a continuación pulsar atrás, el campo de texto muestra
@@ -51,7 +51,7 @@ Los bonus que he implementado en el proyecto son:
 - Usar un sistema de grid para pintar el listado de personajes.
 - En el caso de que la usuaria navegue a una URL inexistente,
 como por ejemplo http://localhost:3000/#/detail/12345 (el id 12345 no existe), mostrar
-el mensaje "El personaje que buscas no existe".
+el mensaje "The character you're looking for doesn't exist".
 - Hacer que la URL del detalle de personaje sea compatible, es decir, si
 visitamos esa URL directamente en el navegador se ve el detalle del personaje. Si refescamos el
 navegador en el detalle de un personaje (o cerrando y abriendo en la misma dirección) también se

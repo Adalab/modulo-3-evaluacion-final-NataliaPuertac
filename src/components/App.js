@@ -37,7 +37,6 @@ function App() {
   const handleReset = () => {
     setSearch ('');
     setSelect ('Gryffindor');
-    console.log('enrtra')
   };
   
   //orden alfabético

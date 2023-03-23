@@ -20,6 +20,27 @@
         width: 200px;
         height: 250px;
         }
+
+        &--div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &--title{
+            color: black;
+            font-family: $fontFamily;
+        }
+
+        &--text{
+            font-family: $fontFamily;
+            padding-top: 3px;
+        }
+
+        &--span{
+            display:flex;
+            gap:20px;
+        }
     }
 
     &__section2{
@@ -31,9 +52,13 @@
 
         &--link{
             text-decoration: none;
-            padding: 5px;
+            padding: 10px 20px;
             background-color: $characterColor;
+            color:black;
             border-radius: 10%;
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-family: $fontFamily;
         }
     }
 

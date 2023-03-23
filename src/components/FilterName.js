@@ -9,7 +9,7 @@ const FilterName = ({setSearch, search}) =>{
 
     return(
     <>
-        <label className="nameLabel" htmlFor="character"> Busca por personaje:
+        <label className="nameLabel" htmlFor="character"> Search by character:
         <input
         className="nameInput"
         type="text"

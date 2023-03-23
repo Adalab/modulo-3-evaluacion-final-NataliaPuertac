@@ -10,13 +10,13 @@ const FilterHouse = ({setSelect, select}) => {
 
     return(
     <>
-        <label className="houseLabel" htmlFor="house">Selecciona la casa:
+        <label className="houseLabel" htmlFor="house">Select the house:
             <select value={select} className="houseInput" id="house" name="select" onChange={handleSelect}>   
                 <option value="Gryffindor">Gryffindor</option>
                 <option value="Hufflepuff">Hufflepuff</option>
                 <option value="Slytherin">Slytherin</option>
                 <option value="Ravenclaw">Ravenclaw</option>
-                <option value="">Todas las casas</option>
+                <option value="">All the houses</option>
             </select>
         </label>   
     </>
