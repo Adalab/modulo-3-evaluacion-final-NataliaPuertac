@@ -37,6 +37,7 @@ function App() {
   const handleReset = () => {
     setSearch ('');
     setSelect ('Gryffindor');
+    console.log('enrtra')
   };
   
   //orden alfabético
@@ -61,7 +62,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<>
-          <Filters setSearch={setSearch} setSelect={setSelect} search={search} handleReset={handleReset}/>
+          <Filters setSearch={setSearch} setSelect={setSelect} select={select} search={search} handleReset={handleReset}/>
           <CharacterList search={search} select={select} characterFilter={characterFilter}/>
         </>}/>
         <Route path='/character/:characterId' 

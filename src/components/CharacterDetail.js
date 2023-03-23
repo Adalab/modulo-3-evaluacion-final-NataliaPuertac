@@ -4,7 +4,7 @@ import '../styles/layouts/characterDetail.scss';
 
 
 const CharacterDetail= ({characterFind}) => {
-
+if (characterFind !== undefined){
     return(
     <div className="character">
         <section className="character__section1">
@@ -25,7 +25,7 @@ const CharacterDetail= ({characterFind}) => {
                 <p className='text'>{characterFind.gender}</p>
                 <h3 className='title'>Especie</h3>
                 <p className='text'>{characterFind.species} 👤</p>
-                <h3 className='title'>Nombres alternativos</h3>
+                <h3 className='title'>{characterFind.alternate_names.length ? 'Nombres alternativos' : ''}</h3>
                 <p className='text'>{characterFind.alternate_names}</p>
             </div>
         </section>
@@ -34,6 +34,16 @@ const CharacterDetail= ({characterFind}) => {
         </section> 
     </div>
     ); 
+}else{
+    return(
+    <section>
+        <p>El personaje que buscas no existe</p>
+        <section className="character__section2">
+            <Link className="character__section2--link" to={"/"}> ← volver</Link>    
+        </section> 
+    </section>
+    );
+};
 };
 
 export default CharacterDetail;
