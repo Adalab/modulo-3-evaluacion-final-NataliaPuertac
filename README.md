@@ -1,62 +1,59 @@
-# ⚡BUSCADOR DE PERSONAJES DE HARRY POTTER 🧙
+# ⚡HARRY POTTER CHARACTER FINDER 🧙
 
-## Descripción del proyecto ✍️
+## Project description ✍️
 
-El ejercicio consiste en desarrollar una página web con un listado de personajes de Harry Potter, que
-podemos filtrar ya sea por el nombre del personaje o por la casa a la que pertenecen. 
+The task consists of developing a web page with a list of Harry Potter characters that can be filtered by either the character's name or the house they belong to. 
 
-## Listado de personajes 📚
+## List of characters 📚
 
-En primer lugar, he realizado una web con el listado de personajes de Harry Potter
-utilizando el servicio de https://hp-api.onrender.com/ que nos devuelve información sobre los personajes de
-Harry Potter filtrados por la casa a la que pertenece. Sobre cada uno de ellos, he pintado:
-- Foto
-- Nombre
-- Especie
+Firstly, I have created a web page with a list of Harry Potter characters using the https://hp-api.onrender.com/ service which returns information about Harry Potter characters filtered by the house they belong to. For each character, I have displayed:
+- Photo
+- Name
+- Species
 
-## Imágenes 📷
+## Images 📷
 
-Algunas de los personajes que devuelve el API no tienen imagen así que he elegido la imagen del sombrero seleccionador para que ese campo no se quede vacío.
+Some of the characters returned by the API do not have an image, so I have chosen the image of the Sorting Hat to fill in that field.
 
-## Filtrado de personajes 🤓
+## Character filtering 🤓
 
-Ahora que ya tengo el listado de personajes en pantalla, la segunda parte consiste en poder buscarlos
-por nombre. Para eso, he añadido un input a la interfaz, de forma que al ir escribiendo un nombre queden
-en la interfaz solo los personajes cuyo nombre contiene las letras escritas. 
+Now that I have the list of characters on the screen, the second part is to be able to search for them by name. For this purpose, I have added an input to the interface, so that as the user types a name, only the characters whose name contains the letters written are displayed. 
 
-## Componentes del listado de personajes 🧹
+## Components of the character list 🧹
 
-El listado tiene los siguientes componentes:
-- Componente para el filtro de nombre.
-- Componente para el listado.
-- Componente para la tarjeta de cada personaje del listado.
-- Componente para el detalle de cada personaje.
+The character list has the following components:
 
-## Detalles de calidad 🪄
+- Component for name filtering.
+- Component for the list.
+- Component for the card of each character in the list.
+- Component for the details of each character.
 
-Los detalles de calidad de mi página son:
-- El campo de texto está recubierto por una etiqueta < form >.
-- Si estando en el campo de filtrado la usuaria pulsa intro, se impide que el navegador navegue o
-cambie la ruta sin querer.
-- Si se busca por un texto por ejemplo "XXX" y no hay ningún personaje que coincida con dicho texto,
-se muestra el mensaje "There are no characters that match your search".
-- El filtro busca independientemente de que la usuaria introduzca el texto en mayúsculas o
-minúsculas.
-- Al entrar en el detalle de un personaje y a continuación pulsar atrás, el campo de texto muestra
-el texto que tenía anteriormente.
+## Quality details 🪄
+
+The quality details of my page are:
+
+- The text field is wrapped in a <form> tag.
+- If the user presses enter while in the filtering field, it prevents the browser from accidentally navigating or changing the route.
+- If a search is made for text, for example, "XXX" and there are no characters that match that text, the message "There are no characters that match your search" is displayed.
+- The filter searches regardless of whether the user enters the text in uppercase or lowercase.
+- When entering the details of a character and then pressing back, the text field shows the text it previously had.
 
 ## Bonus ✌️
 
-Los bonus que he implementado en el proyecto son:
-- Usar un sistema de grid para pintar el listado de personajes.
-- En el caso de que la usuaria navegue a una URL inexistente,
-como por ejemplo http://localhost:3000/#/detail/12345 (el id 12345 no existe), mostrar
-el mensaje "The character you're looking for doesn't exist".
-- Hacer que la URL del detalle de personaje sea compatible, es decir, si
-visitamos esa URL directamente en el navegador se ve el detalle del personaje. Si refescamos el
-navegador en el detalle de un personaje (o cerrando y abriendo en la misma dirección) también se
-vuelve a mostrar el detalle de ese personaje.
-- Mostrar el listado de personajes ordenado alfabéticamente por nombre.
-- Crear un boton de reset para que la página vuelva a su listado principal
+The bonuses that I have implemented in the project are:
+- Use a grid system to display the list of characters.
+- In the case that the user navigates to a nonexistent URL, such as http://localhost:3000/#/detail/12345 (where the id 12345 does not exist), display the message "The character you're looking for doesn't exist."
+- Make the character detail URL compatible, meaning that if we visit that URL directly in the browser, we see the detail of the character. If we refresh the browser on the detail of a character (or close and reopen it in the same direction), the detail of that character is displayed again.
+- Display the list of characters alphabetically ordered by name.
+- Create a reset button to return the page to its main list.
+
+## Built with  🛠️
+
+- HTML
+- Scss
+- JS
+- React
+- NPM
+- GitHub Pages
  
 
