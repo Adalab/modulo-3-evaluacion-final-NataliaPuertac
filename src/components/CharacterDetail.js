@@ -24,7 +24,7 @@ if (characterFind !== undefined){
                 <h3 className='title'>Género</h3>
                 <p className='text'>{characterFind.gender}</p>
                 <h3 className='title'>Especie</h3>
-                <p className='text'>{characterFind.species} 👤</p>
+                <p className='text'>{characterFind.species} </p>
                 <h3 className='title'>{characterFind.alternate_names.length ? 'Nombres alternativos' : ''}</h3>
                 <p className='text'>{characterFind.alternate_names}</p>
             </div>
@@ -36,8 +36,8 @@ if (characterFind !== undefined){
     ); 
 }else{
     return(
-    <section>
-        <p>El personaje que buscas no existe</p>
+    <section className="character__undefined">
+        <p className="character__undefined--p">El personaje que buscas no existe</p>
         <section className="character__section2">
             <Link className="character__section2--link" to={"/"}> ← volver</Link>    
         </section> 
