@@ -1,12 +1,27 @@
 .main{
-    padding: 50px;
     gap:20px;
     background-color: black;
-    padding-bottom: 200px;
+    padding-top: 20px;
+    min-height: 530px;
+    
+    @media (min-width: 768px){
+        padding: 50px;
+        min-height: 920px;
+    }
+
+    @media (min-width: 1200px){
+        min-height: 400px;
+    }
+
 
     &__list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     list-style: none;
+
+        @media (min-width: 1200px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 }

@@ -41,6 +41,7 @@ The quality details of my page are:
 ## Bonus ✌️
 
 The bonuses that I have implemented in the project are:
+- Responsive design.
 - Use a grid system to display the list of characters.
 - In the case that the user navigates to a nonexistent URL, such as http://localhost:3000/#/detail/12345 (where the id 12345 does not exist), display the message "The character you're looking for doesn't exist."
 - Make the character detail URL compatible, meaning that if we visit that URL directly in the browser, we see the detail of the character. If we refresh the browser on the detail of a character (or close and reopen it in the same direction), the detail of that character is displayed again.

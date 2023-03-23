@@ -68,6 +68,9 @@ function App() {
           element={<CharacterDetail characterFind={characterFind}/>}/> 
       </Routes>
     </main>
+    <footer className='footer'>
+      <p className='footer__p'>⚡Developed by Natalia ⚡</p>
+    </footer>
   </div>
   );
 };

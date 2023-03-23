@@ -1,7 +1,6 @@
 @import './core/reset.scss';
 @import './layouts/variables.scss';
 
-
 .header{
     display: flex;
     align-items: center;
@@ -11,7 +10,32 @@
     background-color: black;
 
     &__image{
-        width: 50%;
-        height: 300px
+        width: 250px;
+        height: 200px;
+
+        @media (min-width: 768px){
+            width: 50%;
+            height: 300px;
+        }
+
+        
+    }
+}
+
+.footer{
+    background-color: black;
+
+    &__p{
+        color: white;
+        padding:10px;
+
+        @media (min-width: 768px){
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+        }
+
+        @media (min-width: 1200px){
+            padding-bottom: 30px;
+        }
     }
 }
